@@ -1,0 +1,167 @@
+.MeusDados {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.281);
+  display: flex;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+.MeusDados .container .topo i {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#fechar {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.418);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.295);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  font-weight: bold;
+  right: 20px;
+}
+.MeusDados .container {
+  width: 50%;
+  height: 450px;
+  border-radius: 20pt;
+  padding: 10px;
+  box-shadow: 0 0 10px #f0f0f0;
+  background: white;
+  animation: aparecer 0.5s ease;
+}
+.container h3 {
+  text-align: center;
+}
+@keyframes aparecer {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.topo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  gap: 10px;
+  justify-content: space-around;
+}
+.topo img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: linear-gradient(90deg, #ddd 25%, #f7f7f7 50%, #ddd 75%);
+  background-size: 500% 100%;
+  animation: proc 1.5s infinite linear;
+}
+.topo #eu,
+.topo h2,
+.topo p {
+  text-align: left;
+  width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-family: "Croissant One", serif;
+}
+.topo div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  width: 70%;
+}
+.baixo {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.baixo h3 a {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  font-family: "Croissant One", serif;
+}
+.baixo button {
+  width: 70%;
+  border-radius: 10pt;
+  height: 45px;
+  background: rgb(255, 0, 0);
+  cursor: pointer;
+  color: white;
+  margin: 20px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 1s;
+}
+.baixo button:hover {
+  box-shadow: 0 0 16px red;
+}
+@media (max-width: 1000px) {
+  .MeusDados .container {
+    width: 80%;
+  }
+}
+@media (max-width: 680px) {
+  .MeusDados .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 570px) {
+  .topo {
+    flex-direction: column;
+  }
+  .topo div h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .topo div {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .MeusDados .container {
+    width: 95%;
+  }
+}
+@media (max-width: 380px) {
+  .topo {
+    height: auto;
+  }
+  .MeusDados .container {
+    height: 550px;
+  }
+  .topo div {
+    padding: 0;
+    font-size: 14px;
+    height: auto;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}

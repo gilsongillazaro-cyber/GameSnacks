@@ -1,0 +1,261 @@
+.sobre {
+  width: 100%;
+  min-height: 100vh;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+.resumo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.resumo div {
+  width: 50%;
+}
+.direita img {
+  width: 100%;
+}
+.esquerda {
+  padding: 10px;
+}
+.sobre h1 {
+  font-size: 3rem;
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  font-family: "Croissant One", serif;
+}
+.sobre p {
+  font-size: 23px;
+  font-family: "Roboto", sans-serif;
+}
+.ofertas {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+.ofertas ul {
+  width: 50%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  list-style: none;
+}
+.ofertas ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  text-align: center;
+  border-radius: 20pt;
+  text-transform: capitalize;
+  transition: 0.4s;
+  box-shadow: 0 0 1px black;
+  font-family: "Croissant One", serif;
+  font-size: 12px;
+}
+.ofertas ul li:hover {
+  background: wheat;
+  box-shadow: 0 0 16px wheat;
+}
+.ofertas ul li img {
+  width: 60%;
+  object-fit: cover;
+  height: 50%;
+}
+#pla {
+  width: 45%;
+  height: 60%;
+}
+.maiss {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10px;
+  text-align: center;
+}
+.maiss p {
+  font-family: "Roboto", serif;
+}
+.valores {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.valores ul {
+  width: 80%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+  list-style: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.valores ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  border-radius: 20pt;
+  text-transform: capitalize;
+  transition: 0.4s;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 0 1px black;
+}
+.valores ul li p {
+  font-family: "Croissant One", serif;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+}
+.valores ul li i {
+  font-size: 3rem;
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+.valores ul li:hover {
+  background: wheat;
+  box-shadow: 0 0 16px wheat;
+}
+
+@media (max-width: 1100px) {
+  .ofertas ul li #pla {
+    width: 60%;
+  }
+}
+@media (max-width: 868px) {
+  .sobre h1 {
+    font-size: 3rem;
+  }
+  .sobre p {
+    font-size: 20px;
+  }
+  .ofertas ul li img {
+    width: 100%;
+  }
+  #pla {
+    width: 100%;
+  }
+}
+@media (max-width: 815px) {
+  .resumo {
+    flex-direction: column-reverse;
+  }
+  .resumo div {
+    width: 100%;
+    text-align: center;
+  }
+  .ofertas {
+    flex-direction: column;
+  }
+  .ofertas ul {
+    width: 100%;
+  }
+  .ofertas ul li img {
+    width: 100%;
+    height: 100%;
+  }
+  .valores ul {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .resumo {
+    flex-direction: column-reverse;
+  }
+  .resumo div {
+    width: 100%;
+    text-align: center;
+  }
+  .ofertas {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .ofertas ul {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px;
+  }
+  .ofertas ul li img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .valores ul {
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .sobre h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .ofertas ul {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 10px;
+  }
+  .ofertas ul li img {
+    width: 95%;
+    height: 50%;
+  }
+  #pla {
+    height: 100%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 380px) {
+  .direita img {
+    width: 60%;
+  }
+  .ofertas ul li {
+    font-size: 10px;
+  }
+}
+@media (max-width: 340px) {
+  .sobre h1 {
+    font-size: 1.5rem;
+  }
+}

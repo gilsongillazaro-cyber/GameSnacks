@@ -1,0 +1,52 @@
+.ve {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ve ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+.ve ul li {
+  border-radius: 20pt;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  height: 350px;
+  box-shadow: 0 0 1px black;
+}
+.ve ul li i {
+  font-size: 3rem;
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+.ve ul li p,
+.ve ul li h1 {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  .ve ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 40%;
+  }
+  .ve ul li {
+    width: 90%;
+    height: 200px;
+  }
+}

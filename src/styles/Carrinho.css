@@ -1,0 +1,229 @@
+.Carrinho {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.151);
+  display: flex;
+  left: 0;
+  top: 0;
+  z-index: 99999999;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+#fechar2 {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.418);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.295);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  font-weight: bold;
+  right: 20px;
+}
+
+.Carrinho .container {
+  width: 70%;
+  height: 550px;
+  border-radius: 0;
+  padding: 20px;
+  border-radius: 20pt;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.quanti {
+  font-weight: bold;
+}
+.sem {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-around;
+  font-family: "Croissant One", serif;
+}
+
+.Carrinho .container h1 {
+  width: 100%;
+  text-align: left;
+  text-transform: capitalize;
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  font-size: 40px;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", serif;
+}
+.Carrinho .container h2 {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+.iii {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", serif;
+}
+.Carrinho .container ul {
+  width: 100%;
+  padding: 5px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.Carrinho .container ul li {
+  display: flex;
+  border-radius: 10pt;
+  padding-top: 5px;
+  width: 95%;
+  border-bottom: 3px solid orange;
+  height: 180px;
+  align-items: center;
+  justify-content: center;
+}
+.Carrinho .container ul li img {
+  height: 100%;
+  width: 40%;
+  border-radius: 5pt;
+  object-fit: cover;
+  margin: 5px;
+  background: linear-gradient(90deg, #ddd 25%, #f7f7f7 50%, #ddd 75%);
+  background-size: 500% 100%;
+  animation: proc 1.5s infinite linear;
+}
+.detalhes {
+  width: 30%;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  font-weight: bold;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  break-word: break-word;
+}
+.bo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bo button {
+  background: linear-gradient(45deg, red, orange);
+  height: 25%;
+  border-radius: 10pt;
+  width: 30%;
+  border: none;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
+}
+.detalhes p span {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", serif;
+}
+.remover {
+  width: 8%;
+  height: 25%;
+  border-radius: 10pt;
+  background-color: red;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 23px;
+  color: white;
+  border: none;
+}
+.bo button:hover {
+  opacity: 0.5;
+}
+.total {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  text-align: center;
+  text-transform: lowercase;
+  font-family: "Croissant One", serif;
+}
+.total button {
+  cursor: pointer;
+  width: 33%;
+  height: 50px;
+  border-radius: 10pt;
+  background: linear-gradient(45deg, red, orange);
+  border: none;
+  font-family: "Croissant One", serif;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.Carrinho h2 span {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+
+@media (max-width: 800px) {
+  .Carrinho .container {
+    width: 95%;
+  }
+}
+@media (max-width: 570px) {
+  .Carrinho .container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 95%;
+    font-size: 18px;
+    padding: 7px;
+    border-radius: 20pt 20pt 0 0;
+  }
+  .Carrinho .container h1,
+  .Carrinho .container h2,
+  .Carrinho .container h2 span {
+    font-size: 20px;
+  }
+  .total button {
+    font-size: 10px;
+  }
+  .detalhes {
+    font-size: 12px;
+  }
+  .bo button {
+    font-size: 15px;
+    height: 50%;
+    width: 40%;
+  }
+  .Carrinho .container ul li {
+    width: 100%;
+  }
+  .remover {
+    background: none;
+    color: red;
+    font-size: 18px;
+  }
+}
+@media (max-width: 390px) {
+  .detalhes {
+    font-size: 10px;
+    padding: 2px;
+  }
+}

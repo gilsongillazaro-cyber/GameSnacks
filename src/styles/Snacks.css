@@ -1,0 +1,348 @@
+.snacks {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5px;
+  position: relative;
+}
+.snacks .H11 {
+  text-transform: capitalize;
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  width: 100%;
+  white-space: nowrap;
+  font-family: "Croissant One", serif;
+}
+.sem {
+  grid-column: span 4;
+}
+.snacks h2 {
+  font-family: "Croissant One", serif;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.B {
+  width: 95%;
+  height: 80px;
+  display: flex;
+  margin: 10px auto;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20pt;
+  box-shadow: 0 0 5px black;
+  align-items: center;
+  justify-content: space-around;
+}
+.B button {
+  height: 60px;
+  border-radius: 30pt;
+  width: 170px;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.342),
+    rgba(255, 166, 0, 0.349)
+  );
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  transition: 1s;
+}
+.B button.ativo {
+  background: linear-gradient(45deg, red, orange);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.B button.ativo:hover {
+  opacity: 0.9;
+}
+.B button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.snacks ul {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 300px);
+  padding: 10px;
+  list-style: none;
+}
+.snacks ul li {
+  background-color: white;
+  border-radius: 20pt;
+  display: flex;
+  transition: 1s;
+  padding: 15px;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: capitalize;
+}
+.snacks ul li .imagem {
+  height: auto;
+  width: 100%;
+}
+.snacks ul li .imagem img {
+  border-radius: 20pt;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  background: linear-gradient(90deg, #ddd 25%, #f7f7f7 50%, #ddd 75%);
+  background-size: 500% 100%;
+  animation: proc 1.5s infinite linear;
+}
+.snacks ul li .conteudo {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.snacks ul li .conteudo h2 {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  white-space: nowrap;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+.conteudo h3 {
+  font-family: "Croissant One", serif;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+.conteudo p {
+  font-weight: bold;
+}
+.conteudo h2 {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.interacoes {
+  display: flex;
+}
+.dirr {
+  width: 100%;
+  height: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.dirr button {
+  height: 90%;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#removerEstrela i {
+  /*background: linear-gradient(to right, #ffd400 0%, #fff192 100%);
+
+  -webkit-background-clip: text;
+  text-transform: capitalize;
+  -webkit-text-fill-color: transparent;*/
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  text-transform: capitalize;
+  -webkit-text-fill-color: transparent;
+  animation: ci 1s linear;
+}
+@keyframes ci {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#removerEstrela h3 {
+  color: black;
+}
+#removerFavorito {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  text-transform: capitalize;
+  -webkit-text-fill-color: transparent;
+  animation: ci 1s linear;
+}
+
+.dirr button h3 {
+  color: black;
+  font-size: 1rem;
+}
+.ess {
+  width: 20%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ess button {
+  height: 90%;
+  width: 45%;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.snacks ul li #adiconarCarrinho {
+  width: 70%;
+  border-radius: 5pt;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  height: 40px;
+  background: linear-gradient(45deg, red, orange);
+  border: none;
+
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.4s;
+}
+.snacks ul li #adiconarCarrinho:hover {
+  color: white;
+}
+.snacks ul li:hover {
+  background-color: rgba(245, 222, 179, 0.295);
+  border: none;
+  box-shadow: none;
+}
+#removerEstrela {
+  display: none;
+}
+#removerFavorito {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .snacks h1 {
+    width: 100%;
+    text-align: right;
+  }
+  .snacks ul {
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 20px;
+    list-style: none;
+  }
+}
+@media (max-width: 780px) {
+  .snacks h1 {
+    width: 100%;
+    text-align: right;
+  }
+  .B {
+    width: 100%;
+  }
+  .B button {
+    width: 130px;
+    height: 50px;
+    font-size: 12px;
+  }
+  .snacks ul {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+    padding: 10px;
+    list-style: none;
+  }
+}
+@media (max-width: 650px) {
+  .snacks h1:nth-child(1) {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: right;
+    padding: 20px;
+    margin: 0;
+  }
+  .snacks ul {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    gap: 20px;
+    list-style: none;
+  }
+}
+@media (max-width: 550px) {
+  .snacks h1:nth-child(1) {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: right;
+    padding: 20px;
+    margin: 0;
+  }
+  .B {
+    width: 100%;
+  }
+  .B button {
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .snacks ul {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 10px;
+    list-style: none;
+  }
+}
+@media (max-width: 320px) {
+  .snacks h1:nth-child(1) {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: right;
+    padding: 20px;
+    margin: 0;
+  }
+  .B {
+    width: 100%;
+    height: 50px;
+  }
+  .B button {
+    width: 90px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .snacks ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 10px;
+    list-style: none;
+  }
+}

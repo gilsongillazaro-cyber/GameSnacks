@@ -1,0 +1,205 @@
+.DetalhesSnacksFavoritos {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.329);
+  z-index: 999;
+}
+.conteiner {
+  width: 80%;
+  height: 500px;
+  border-radius: 20pt;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.direita {
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+}
+.DetalhesSnacksFavoritos .conteiner .direita img {
+  border-radius: 20pt;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background: linear-gradient(90deg, #ddd 25%, #f7f7f7 50%, #ddd 75%);
+  background-size: 500% 100%;
+  animation: proc 1.5s infinite linear;
+}
+.Esquerda {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+.Esquerda h3 {
+  width: 100%;
+  text-transform: capitalize;
+  font-family: "Croissant One", serif;
+}
+.Deta h2 {
+  width: 100%;
+  text-transform: capitalize;
+  font-family: "Croissant One", serif;
+}
+.botooes {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.botooes div {
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  gap: 10px;
+  display: flex;
+  height: 100%;
+}
+.botooes div button {
+  width: 100%;
+  font-size: 23px;
+  border-radius: 5pt;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.botooes div button i {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.encoo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  height: 45px;
+}
+.encoo button {
+  height: 40px;
+  width: 45%;
+  border: none;
+  color: white;
+  border-radius: 10pt;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.cari {
+  background: linear-gradient(45deg, red, orange);
+}
+.whh {
+  background: linear-gradient(45deg, limegreen, green);
+  font-weight: bold;
+}
+#Ull {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 10px;
+  padding-bottom: 60px;
+}
+#Ull li {
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: row;
+  background: none;
+  cursor: default;
+  border-radius: 0;
+  align-items: center;
+  justify-content: space-around;
+}
+#Ull li img {
+  align-self: stretch;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 5px;
+  background: linear-gradient(90deg, #ddd 25%, #f7f7f7 50%, #ddd 75%);
+  background-size: 500% 100%;
+  animation: proc 1.5s infinite linear;
+}
+#Ull li div {
+  width: 80%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+#Ull li div p {
+  text-transform: none;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+#Ull li div p span {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", serif;
+}
+.tempo {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+#Ull li button {
+  height: 50%;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  background: none;
+  color: red;
+  width: 8%;
+}
+.eniar {
+  position: sticky;
+  bottom: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.eniar button {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  border: none;
+  background: linear-gradient(45deg, red, orange);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.eniar textarea {
+  border: 1px solid orange;
+  width: 85%;
+  height: auto;
+  max-height: 300px;
+  overflow-y: auto;
+  outline: none;
+  border-radius: 5pt;
+  padding: 5px;
+}

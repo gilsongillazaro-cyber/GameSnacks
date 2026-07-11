@@ -1,0 +1,80 @@
+.DireitaC {
+  height: 100%;
+  width: 50%;
+  border-radius: 20pt;
+  background-color: white;
+  overflow: hidden;
+  padding: 10px;
+}
+.DireitaC ul {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-around;
+}
+.DireitaC ul li,
+.DireitaC ul li a {
+  width: 100%;
+  height: 20%;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: 10pt;
+  justify-content: space-around;
+}
+.DireitaC ul li:hover {
+  background: #f0f0f0;
+}
+.conteudo h1 {
+  text-transform: lowercase;
+}
+.conteudo p {
+  font-family: "Croissant One", serif;
+  font-size: 14px;
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.icone {
+  height: 60px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+.icone .bi-telephone-fill {
+  color: dodgerblue;
+}
+.icone .bi-whatsapp {
+  color: darkgreen;
+}
+.icone .bi-instagram {
+  color: rgb(255, 0, 43);
+}
+.icone .bi-facebook {
+  color: blue;
+}
+.icone .bi-envelope-at-fill {
+  color: #3c3c3c;
+}
+.DireitaC .conteudo {
+  color: black;
+  width: 70%;
+  height: 100%;
+}
+@media (max-width: 650px) {
+  .DireitaC {
+    width: 100%;
+    min-height: 50vh;
+    margin-bottom: 40px;
+  }
+}

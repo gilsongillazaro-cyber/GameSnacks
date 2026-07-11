@@ -1,0 +1,15 @@
+.ConteinerC {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 2%;
+  overflow: hidden;
+}
+@media (max-width: 650px) {
+  .ConteinerC {
+    flex-direction: column;
+  }
+}

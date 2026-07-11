@@ -1,0 +1,163 @@
+.Favoritos {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  overflow: hidden;
+}
+.what {
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(45deg, lightgreen, green);
+}
+.Favoritos h1 {
+  padding: 1%;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+.topoo span {
+  font-family: "Croissant One", serif;
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
+.i h1 {
+  font-family: "Croissant One", serif;
+}
+.topoo {
+  background-color: white;
+  width: 80%;
+  height: 150px;
+  padding: 10px;
+  font-family: "Croissant One", serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15pt;
+  margin: auto;
+}
+.topoo h1 {
+  font-family: "Croissant One", serif;
+  width: 100%;
+  text-align: center;
+}
+.topoo .quantidade {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+}
+.topoo i {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#UL {
+  width: 100%;
+  height: auto;
+  display: grid;
+  padding: 15px;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 300px);
+}
+#UL li {
+  background-color: white;
+  border-radius: 20pt;
+  cursor: pointer;
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#UL li img {
+  border-radius: 20pt;
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+  background: linear-gradient(90deg, #ddd 25%, #f7f7f7 50%, #ddd 75%);
+  background-size: 500% 100%;
+  animation: proc 1.5s infinite linear;
+}
+#UL li p {
+  width: 100%;
+  padding-inline: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#UL li h1 {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#UL li button {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5pt;
+  border: none;
+  height: 40px;
+  transition: 0.5s;
+}
+#UL li #adiconarCarrinho {
+  background: linear-gradient(45deg, red, orange);
+}
+.add {
+  font-family: "Croissant One", serif;
+  background: linear-gradient(45deg, red, orange);
+}
+
+@media (max-width: 1200px) {
+  #UL {
+    padding: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 895px) {
+  #UL {
+    padding: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .topoo {
+    width: 95%;
+    font-size: 12px;
+  }
+  .topoo span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 620px) {
+  #UL {
+    padding: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 360px) {
+  #UL {
+    padding: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

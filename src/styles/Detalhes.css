@@ -1,0 +1,313 @@
+.Detalhes {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.281);
+  display: flex;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+#fechar5 {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.418);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.295);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  font-weight: bold;
+  right: 20px;
+}
+#container {
+  background-color: white;
+  border-radius: 30pt;
+  width: 85%;
+  height: 550px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+#container .LateralEsquerda {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container .LateralEsquerda img {
+  width: 90%;
+  height: 90%;
+  border-radius: 20pt;
+  background: linear-gradient(90deg, #ddd 25%, #f7f7f7 50%, #ddd 75%);
+  background-size: 500% 100%;
+  animation: proc 1.5s infinite linear;
+}
+#container .LateralDireita {
+  width: 50%;
+  height: auto;
+  overflow-y: auto;
+}
+#container .LateralDireita::-webkit-scrollbar {
+  width: 0;
+}
+.LateralDireita .interacoes {
+  width: 50%;
+  align-items: center;
+  padding: 10px;
+}
+.LateralDireita .interacoes .dirr {
+  width: 50%;
+}
+.LateralEsquerda img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5pt;
+  object-fit: cover;
+  background: linear-gradient(90deg, #ddd 25%, #f7f7f7 50%, #ddd 75%);
+  background-size: 500% 100%;
+  animation: proc 1.5s infinite linear;
+}
+.Deta {
+  width: 100%;
+}
+.Deta h2,
+p {
+  width: 100%;
+  text-transform: capitalize;
+}
+.Enco {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Enco button {
+  border-radius: 10pt;
+  padding: 10px;
+  width: 45%;
+  height: 100%;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: none;
+  color: white;
+  transition: 1s;
+  cursor: pointer;
+}
+#ca {
+  background: linear-gradient(45deg, red, orange);
+}
+#wh {
+  background: linear-gradient(45deg, #25d366, #128c7e);
+}
+#wh:hover {
+  box-shadow: 0 0 16px darkgreen;
+}
+#ca:hover {
+  box-shadow: 0 0 16px orangered;
+}
+#Conjunto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 5px 5px 60px 5px;
+  gap: 10px;
+}
+#Conjunto .comentario {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: none;
+  padding: 5px;
+  width: 100%;
+  height: auto;
+  cursor: default;
+  background: none;
+  border-radius: 0;
+}
+#Conjunto .comentario img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #ddd 25%, #f7f7f7 50%, #ddd 75%);
+  background-size: 500% 100%;
+  animation: proc 1.5s infinite linear;
+}
+.comentario div {
+  display: flex;
+  width: 75%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  align-items: center;
+  height: auto;
+  justify-content: center;
+  flex-direction: column;
+}
+.tempo {
+  display: flex;
+  gap: 20px;
+}
+.comentario div p span {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  text-transform: capitalize;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", serif;
+}
+.adicionar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0;
+}
+.RemoverComentario {
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}
+.adicionar textarea {
+  width: 90%;
+  height: auto;
+  max-height: 300px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid red;
+  outline: none;
+  overflow-y: auto;
+}
+.adicionar button {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(45deg, red, orange);
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  border: none;
+  transition: 1s;
+}
+.adicionar button:hover {
+  opacity: 0.6;
+}
+@media (max-width: 1395px) {
+  #Conjunto {
+    height: 180px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1180px) {
+  #Conjunto {
+    height: 168px;
+  }
+}
+@media (max-width: 1150px) {
+  #container {
+    flex-direction: column;
+    width: 90%;
+  }
+  #container .LateralEsquerda {
+    width: 100%;
+    height: 50%;
+  }
+  .LateralEsquerda img {
+    height: 100%;
+  }
+  #container .LateralDireita {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+  .LateralDireita .interacoes {
+    padding: 0;
+  }
+  .Enco {
+    height: 40px;
+  }
+  .adicionar {
+    position: sticky;
+  }
+}
+@media (max-width: 510px) {
+  .Detalhes {
+    position: fixed;
+  }
+  #container {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    height: 85%;
+    bottom: 0;
+    border-radius: 20pt 20pt 0 0;
+  }
+  #Conjunto {
+    gap: 30px;
+  }
+  #Conjunto .comentario {
+    gap: 5px;
+    padding: 0;
+  }
+}
+@media (max-width: 400px) {
+  .Detalhes {
+    position: fixed;
+  }
+  #container {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    height: 85%;
+    bottom: 0;
+    border-radius: 20pt 20pt 0 0;
+  }
+
+  #Conjunto {
+    gap: 40px;
+    font-size: 13px;
+  }
+  #Conjunto .comentario {
+    gap: 5px;
+    padding: 0;
+  }
+}
+@media (max-width: 360px) {
+  #Conjunto {
+    gap: 45px;
+    font-size: 12px;
+  }
+  #Conjunto .comentario {
+    gap: 5px;
+    padding: 0;
+  }
+}
