@@ -1,4 +1,3 @@
-import fotoTeste from "../assets/GameSnack imagens/side-view-overnight-oats-with-fresh-strawberries-blueberries-nuts-glass-jar-rustic-table.jpg";
 import { Link } from "react-router-dom";
 import "../styles/MeusDados.css";
 import { toast } from "react-toastify";
