@@ -165,7 +165,7 @@ function AlgunsItens({ itens, atualizar }) {
     try {
       const token = localStorage.getItem("TokenGameSnack");
       if (!token) {
-        toast.warning("faça login pra melhor desempenho", {
+        toast.info("faça login pra um melhor desempenho", {
           position: "top-center",
         });
         return;
