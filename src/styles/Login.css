@@ -6,11 +6,10 @@
   font-family: "Roboto", sans-serif;
   align-items: center;
   justify-content: center;
-  background-image: url("src/assets/GameSnack imagens/fundo login.png");
   color: black;
   font-weight: bold;
+  background-size: cover;
   text-transform: capitalize;
-
   object-fit: cover;
 }
 .Login h1 {

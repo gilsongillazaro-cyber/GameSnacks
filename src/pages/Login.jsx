@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { toast } from "react-toastify";
 import api from "../services/api";
 import "../styles/Login.css";
+import fundo from "../assets/GameSnack imagens/NovaPasta/fundo-login.webp";
 function Login() {
   const email = useRef();
   const senha = useRef();
@@ -54,7 +55,7 @@ function Login() {
     }
   }
   return (
-    <div className="Login">
+    <div className="Login" style={{ background: `url(${fundo})` }}>
       <form>
         <h1>
           <i className="bi bi-door-open-fill"></i> loga-<span>te</span>

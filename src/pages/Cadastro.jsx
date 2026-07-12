@@ -3,7 +3,7 @@ import "../styles/Cadastro.css";
 import { useRef, useState } from "react";
 import api from "../services/api";
 import { toast } from "react-toastify";
-
+import fundo from "../assets/GameSnack imagens/NovaPasta/fundo-login.webp";
 function Cadastro() {
   const senha = useRef();
   const nome = useRef();
@@ -52,8 +52,15 @@ function Cadastro() {
       });
       tex.current.style.display = "block";
       load.current.style.display = "none";
-      navigate("/");
       setDisabilitado(false);
+      nome.current.value = "";
+      email.current.value = "";
+      verificador.current.value = "";
+      senha.current.value = "";
+      setFoto("");
+      p.current.innerHTML = `<i className="bi bi-image-fill"></i> sua foto pra perfil`;
+      p.current.style.color = "lightgrey";
+      navigate("/");
     } catch (erro) {
       setDisabilitado(false);
       tex.current.style.display = "block";
@@ -65,7 +72,7 @@ function Cadastro() {
   }
 
   return (
-    <div className="Cadastro">
+    <div className="Cadastro" style={{ background: `url(${fundo})` }}>
       <form>
         <h1>
           <i class="bi bi-person-fill-add"></i> cadastra-<span>te</span>
@@ -88,13 +95,8 @@ function Cadastro() {
               accept="image/*"
               onChange={(e) => {
                 setFoto(e.target.files[0]);
-                if (e.target.files[0]) {
-                  p.current.innerHTML = `<i className="bi bi-image-fill"></i> foto selecionada`;
-                  p.current.style.color = "blue";
-                } else {
-                  p.current.innerHTML = `<i className="bi bi-image-fill"></i> sua foto pra perfil`;
-                  p.current.style.color = "lightgrey";
-                }
+                p.current.innerHTML = `<i className="bi bi-image-fill"></i> foto selecionada`;
+                p.current.style.color = "blue";
               }}
             />
           </label>

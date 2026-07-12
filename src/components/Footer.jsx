@@ -1,5 +1,5 @@
 import "../styles/Footer.css";
-import Logo from "../assets/GameSnack imagens/logoGameSnack.png";
+import Logo from "../assets/GameSnack imagens/NovaPasta/logoGameSnack.webp";
 function Footer() {
   return (
     <footer className="Footer">

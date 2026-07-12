@@ -1,11 +1,11 @@
-import fotoPlay from "../assets/GameSnack imagens/PlayStation.png";
-import fotoPlayLateral from "../assets/GameSnack imagens/jogosLateral.png";
-import fotoGelado from "../assets/GameSnack imagens/geldosgourmet.png";
-import fotoGeladoLateral from "../assets/GameSnack imagens/geladosGorumetLateraral.png";
-import fotoBolo from "../assets/GameSnack imagens/bolocentral.png";
-import fotoBoloLateral from "../assets/GameSnack imagens/boloLateral.png";
-import fotoPipoca from "../assets/GameSnack imagens/pipoca.png";
-import fotoPipocaLateral from "../assets/GameSnack imagens/pipocasLateral.png";
+import fotoPlay from "../assets/GameSnack imagens/NovaPasta/PlayStation.webp";
+import fotoPlayLateral from "../assets/GameSnack imagens/NovaPasta/jogosLateral.png";
+import fotoGelado from "../assets/GameSnack imagens/NovaPasta/geldosgourmet.webp";
+import fotoGeladoLateral from "../assets/GameSnack imagens/NovaPasta/geladosGorumetLateraral.webp";
+import fotoBolo from "../assets/GameSnack imagens/NovaPasta/bolocentral.webp";
+import fotoBoloLateral from "../assets/GameSnack imagens/NovaPasta/boloLateral.webp";
+import fotoPipoca from "../assets/GameSnack imagens/NovaPasta/pipoca.webp";
+import fotoPipocaLateral from "../assets/GameSnack imagens/NovaPasta/pipocasLateral.webp";
 import "../styles/Topo.css";
 import { useState, useEffect } from "react";
 

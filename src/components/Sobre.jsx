@@ -1,9 +1,9 @@
 import "../styles/Sobre.css";
-import BoloNoPote from "../assets/GameSnack imagens/boloNoPote.png";
-import Jogos from "../assets/GameSnack imagens/PlayStation.png";
-import pipoca from "../assets/GameSnack imagens/pipoca.png";
-import gelado from "../assets/GameSnack imagens/geldosgourmet.png";
-import logo from "../assets/GameSnack imagens/logoGameSnack.png";
+import BoloNoPote from "../assets/GameSnack imagens/NovaPasta/boloNoPote.webp";
+import Jogos from "../assets/GameSnack imagens/NovaPasta/PlayStation.webp";
+import pipoca from "../assets/GameSnack imagens/NovaPasta/pipoca.webp";
+import gelado from "../assets/GameSnack imagens/NovaPasta/geldosgourmet.webp";
+import logo from "../assets/GameSnack imagens/NovaPasta/logoGameSnack.webp";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
 import { toast } from "react-toastify";

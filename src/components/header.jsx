@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/GameSnack imagens/logoGameSnack.png";
+import logo from "../assets/GameSnack imagens/NovaPasta/logoGameSnack.webp";
 import "../styles/header.css";
 import MeusDados from "./MeusDados";
 import Carrinho from "./Carrinho";

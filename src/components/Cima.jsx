@@ -1,4 +1,4 @@
-import Foto from "../assets/GameSnack imagens/logoGameSnack.png";
+import Foto from "../assets/GameSnack imagens/NovaPasta/logoGameSnack.webp";
 import "../styles/Cima.css";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";

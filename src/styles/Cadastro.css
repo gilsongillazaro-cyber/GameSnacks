@@ -10,7 +10,6 @@
   color: black;
   font-weight: bold;
   text-transform: capitalize;
-  background-image: url("src/assets/GameSnack imagens/fundo login.png");
   object-fit: cover;
 }
 .load {
@@ -123,6 +122,15 @@
   display: none;
 }
 
+@media (max-width: 1030px) {
+  .Cadastro form {
+    height: 420px;
+    width: 65%;
+  }
+  .Cadastro h1 {
+    font-size: 30px;
+  }
+}
 @media (max-width: 750px) {
   .Cadastro form {
     width: 60%;
