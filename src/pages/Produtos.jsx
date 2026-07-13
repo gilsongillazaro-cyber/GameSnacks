@@ -5,6 +5,7 @@ import Cima from "../components/Cima";
 import Ve from "../components/Ve";
 import Jogos from "../components/Jogos";
 import Snacks from "../components/Snacks";
+import AreaFeedbacks from "../components/AreaFeddbacks";
 function Produtos() {
   return (
     <div className="Produtos">
@@ -13,6 +14,7 @@ function Produtos() {
       <Snacks />
       <Cima />
       <Ve />
+      <AreaFeedbacks />
       <Footer />
     </div>
   );

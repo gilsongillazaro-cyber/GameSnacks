@@ -28,7 +28,7 @@ function DetalhesProdutos({ estado, Item, Id, favoritos, Eu, PegarTodos, YH }) {
   function PedirWht(nome, preco) {
     const token = localStorage.getItem("TokenGameSnack");
     if (!token) {
-      toast.warning("faça login pra fazer encomebda", {
+      toast.warning("faça login pra fazer encomenda", {
         position: "top-center",
       });
       return;

@@ -2,6 +2,7 @@ import Header from "../components/header";
 import Topo from "../components/Topo";
 import Sobre from "../components/Sobre";
 import AlgunsItens from "../components/AlgunsItens";
+import AreaFeedbacks from "../components/AreaFeddbacks";
 import Footer from "../components/Footer";
 import api from "../services/api";
 import { toast } from "react-toastify";
@@ -31,6 +32,7 @@ function Inicio() {
       <Topo />
       <Sobre />
       <AlgunsItens itens={itens} atualizar={PegarItens} />
+      <AreaFeedbacks />
       <Footer />
     </div>
   );

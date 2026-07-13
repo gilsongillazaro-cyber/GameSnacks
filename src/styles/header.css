@@ -253,7 +253,7 @@ header .btns button img {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    z-index: 99999999999999999999999999999;
+    z-index: 9999999;
     transition: 0.4s;
   }
   header .tel .ab span {
@@ -263,7 +263,7 @@ header .btns button img {
   header .tel nav {
     position: fixed;
     top: 0;
-    z-index: 99999999;
+    z-index: 99999;
     left: 0;
     display: none;
     min-height: 100%;

@@ -79,7 +79,9 @@ function Detalhes({ estado, item, atualizar, Id }) {
     try {
       const token = localStorage.getItem("TokenGameSnack");
       if (!token) {
-        toast.warning("Faça login pra adiconar Estrela");
+        toast.warning("Faça login pra remover Estrela", {
+          position: "top-center",
+        });
         return;
       }
       const MeuDados = await api.get(
@@ -149,9 +151,6 @@ function Detalhes({ estado, item, atualizar, Id }) {
     try {
       const token = localStorage.getItem("TokenGameSnack");
       if (!token) {
-        toast.warning("faça login pra adicionar itens aos seus favoritos", {
-          position: "top-center",
-        });
         return;
       }
       const MeuDados = await api.get(
@@ -236,7 +235,7 @@ function Detalhes({ estado, item, atualizar, Id }) {
     try {
       const token = localStorage.getItem("TokenGameSnack");
       if (!token) {
-        toast.warning("Faça login pra adicionar aos comentario", {
+        toast.warning("Faça login pra remover aos comentario", {
           position: "top-center",
         });
         return;
@@ -265,7 +264,7 @@ function Detalhes({ estado, item, atualizar, Id }) {
   function PedirWht(nome, preco) {
     const token = localStorage.getItem("TokenGameSnack");
     if (!token) {
-      toast.warning("faça login pra fazer encomebda", {
+      toast.warning("faça login pra fazer encomenda pelo whatsapp", {
         position: "top-center",
       });
       return;
@@ -329,13 +328,12 @@ Localização de entrega:
                   >
                     {" "}
                     <i className="bi bi-star-fill"></i>{" "}
-                    <h3>{item?.estrelas}</h3>{" "}
+                    <h6>{item?.estrelas}</h6>{" "}
                   </button>
                 ) : (
                   <button onClick={(e) => AdicionarEstrela(e, item._id)}>
                     {" "}
-                    <i className="bi bi-star"></i>{" "}
-                    <h3>{item?.estrelas}</h3>{" "}
+                    <i className="bi bi-star"></i> <h6>{item?.estrelas} </h6>
                   </button>
                 )}
               </div>

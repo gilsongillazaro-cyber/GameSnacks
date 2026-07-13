@@ -5,7 +5,7 @@
   display: flex;
   left: 0;
   top: 0;
-  z-index: 99999999;
+  z-index: 99999999999999999999999999999999999999923569333333339;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -38,6 +38,7 @@
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  z-index: 9999999999999999999999999999999999999999;
 }
 .quanti {
   font-weight: bold;

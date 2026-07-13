@@ -164,9 +164,6 @@ function DetalhesSnacksFavoritos({ estado, snack, atualizar, Id }) {
     try {
       const token = localStorage.getItem("TokenGameSnack");
       if (!token) {
-        toast.warning("faça login pra adicionar itens aos seus favoritos", {
-          position: "top-center",
-        });
         return;
       }
       const MeuDados = await api.get(
@@ -283,7 +280,7 @@ function DetalhesSnacksFavoritos({ estado, snack, atualizar, Id }) {
   function PedirWht(nome, preco) {
     const token = localStorage.getItem("TokenGameSnack");
     if (!token) {
-      toast.warning("faça login pra fazer encomebda", {
+      toast.warning("faça login pra fazer encomenda", {
         position: "top-center",
       });
       return;
@@ -316,6 +313,7 @@ Localização de entrega:
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
     window.open(url, "_blanck");
   }
+
   useEffect(() => {
     yh();
     PegarProduto();
@@ -348,13 +346,13 @@ Localização de entrega:
                   >
                     {" "}
                     <i className="bi bi-star-fill"></i>{" "}
-                    <h3>{item?.estrelas}</h3>{" "}
+                    <h6>{item?.estrelas}</h6>{" "}
                   </button>
                 ) : (
                   <button onClick={(e) => AdicionarEstrela(e, item?._id)}>
                     {" "}
                     <i className="bi bi-star"></i>{" "}
-                    <h3>{item?.estrelas}</h3>{" "}
+                    <h6>{item?.estrelas}</h6>{" "}
                   </button>
                 )}
               </div>

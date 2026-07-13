@@ -1,0 +1,288 @@
+.AreaFeedBacks {
+  padding: 20px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+.AreaFeedBacks h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "Croissant One", serif;
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.AreaFeedBacks p {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  font-weight: 400;
+  height: auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.AreaFeedBacks ul {
+  border-radius: 20pt;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 50%;
+  justify-content: space-around;
+  overflow-x: auto;
+  padding: 20px;
+}
+.AreaFeedBacks ul li {
+  background-color: white;
+  border-radius: 30pt 5px 30pt 5pt;
+  min-width: 60%;
+  max-width: 60%;
+  height: auto;
+  padding: 10px;
+  box-shadow: 0 0 16px lightslategrey;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.primieiro {
+  display: flex;
+  height: 25%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  gap: 10px;
+}
+.primieiro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: linear-gradient(90deg, #ddd 25%, #f7f7f7 50%, #ddd 75%);
+  background-size: 500% 100%;
+  animation: proc 1.5s infinite linear;
+}
+.primieiro h2 {
+  font-family: "Croissant One", serif;
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 60%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.primieiro h4 {
+  width: 30%;
+  text-transform: none;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.mensagem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 40%;
+}
+.mensagem div {
+  width: 85%;
+  padding: 3px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  height: auto;
+}
+.mensagem div strong {
+  background: linear-gradient(45deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+.mensagem button {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+  height: 100%;
+  transition: 1s;
+}
+.mensagem button:hover {
+  transform: scale(0.7);
+}
+.editar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+.editar form {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+.editar p {
+  width: 40%;
+}
+.editar form input {
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10pt;
+  border: 1px solid lightslategrey;
+  outline-color: orangered;
+}
+.editar form button {
+  width: 20%;
+  height: 40px;
+  border-radius: 10pt;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, red, orange);
+  font-weight: bold;
+  font-size: 16px;
+  transition: 1s;
+  cursor: pointer;
+}
+.editar form button:hover {
+  box-shadow: 0 0 16px orangered;
+}
+
+#form {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 100px;
+  gap: 10px;
+}
+#form textarea,
+#form select {
+  width: 80%;
+  height: auto;
+
+  border-radius: 5pt;
+  outline-color: orangered;
+  padding: 10px;
+}
+#form textarea {
+  max-height: 300px;
+  overflow-y: auto;
+}
+#form select option {
+  background-color: lightslategray;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+#form button {
+  width: 40%;
+  height: 40px;
+  border-radius: 10pt;
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  transition: 1s;
+  background: linear-gradient(45deg, red, orange);
+}
+#form button:hover {
+  box-shadow: 0 0 16px orangered;
+}
+
+@media (max-width: 800px) {
+  .primieiro img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 700px) {
+  .AreaFeedBacks ul {
+    padding: 5px;
+  }
+  .AreaFeedBacks ul li {
+    padding: 5px;
+  }
+  .primieiro {
+    font-size: 10px;
+  }
+  .mensagem div {
+    font-size: 14px;
+  }
+  .primieiro img {
+    width: 80px;
+    height: 80px;
+  }
+  .editar form button {
+    font-size: 10px;
+  }
+  .editar form input {
+    padding: 10px;
+  }
+  .editar p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .primieiro img {
+    width: 60px;
+    height: 60px;
+  }
+  .AreaFeedBacks ul {
+    border-radius: 5pt;
+  }
+  .AreaFeedBacks ul li {
+    min-width: 85%;
+  }
+  .editar p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 410px) {
+  .primieiro img {
+    width: 50px;
+    height: 50px;
+  }
+  .AreaFeedBacks ul li {
+    min-width: 90%;
+  }
+  .primieiro {
+    font-size: 8px;
+  }
+  .mensagem div {
+    font-size: 12px;
+  }
+  .mensagem div strong {
+    font-size: 14px;
+  }
+  .editar form {
+    width: 80%;
+  }
+  .editar p {
+    width: 20%;
+    font-size: 8px;
+  }
+}
+@media (max-width: 370px) {
+  .AreaFeedBacks ul li {
+    min-width: 95%;
+  }
+}
