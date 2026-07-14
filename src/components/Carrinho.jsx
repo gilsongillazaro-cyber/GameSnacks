@@ -99,17 +99,17 @@ Obrigado!
   return (
     <div className="Carrinho" onClick={fech2}>
       <button id="fechar2" onClick={fech}>
-        <i class="bi bi-x"></i>
+        <i className="bi bi-x"></i>
       </button>
       <div className="container">
         <h1>
-          <i class="bi bi-cart-fill"></i> seu carrinho
+          <i className="bi bi-cart-fill"></i> seu carrinho
         </h1>
         <h2>
           total acumulado:
           <span>
             {" "}
-            <i class="bi bi-piggy-bank-fill"></i>
+            <i className="bi bi-piggy-bank-fill"></i>
             {carrinho
               .reduce((acumulador, item) => {
                 return acumulador + item.preco * item.quantidade;
@@ -121,7 +121,7 @@ Obrigado!
           total de itens no carrinho:{" "}
           <span className="iii">
             {" "}
-            <i class="bi bi-sd-card-fill"></i>
+            <i className="bi bi-sd-card-fill"></i>
             {carrinho.length}
           </span>
         </p>
@@ -171,7 +171,7 @@ Obrigado!
                       );
                     }}
                   >
-                    <i class="bi bi-dash-lg"></i>
+                    <i className="bi bi-dash-lg"></i>
                   </button>
                   <span className="quanti"> {item.quantidade}</span>
                   <button
@@ -188,7 +188,7 @@ Obrigado!
                       );
                     }}
                   >
-                    <i class="bi bi-plus-lg"></i>
+                    <i className="bi bi-plus-lg"></i>
                   </button>
                 </div>
                 <button
@@ -197,7 +197,7 @@ Obrigado!
                     setCarrinho(carrinho.filter((car) => car.id !== item.id));
                   }}
                 >
-                  <i class="bi bi-trash-fill"></i>
+                  <i className="bi bi-trash-fill"></i>
                 </button>
               </li>
             ))

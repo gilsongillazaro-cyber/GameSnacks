@@ -16,7 +16,7 @@ function DiritaC() {
         <li>
           <a href="tel:+244937490810">
             <div className="icone">
-              <i class="bi bi-telephone-fill"></i>
+              <i className="bi bi-telephone-fill"></i>
             </div>
             <div className="conteudo">
               <h1>telefone</h1>
@@ -27,7 +27,7 @@ function DiritaC() {
         <li>
           <a href="https://wa.me/244937490810" target="_blank">
             <div className="icone">
-              <i class="bi bi-whatsapp"></i>
+              <i className="bi bi-whatsapp"></i>
             </div>
             <div className="conteudo">
               <h1>whatsapp</h1>
@@ -39,7 +39,7 @@ function DiritaC() {
         <li>
           <a href="https://www.instagram.com/gilson_gil7/" target="_blank">
             <div className="icone">
-              <i class="bi bi-instagram"></i>
+              <i className="bi bi-instagram"></i>
             </div>
             <div className="conteudo">
               <h1>instagram</h1>
@@ -51,7 +51,7 @@ function DiritaC() {
         <li>
           <a href="https://www.facebook.com/gilson.gil.886071" target="_blank">
             <div className="icone">
-              <i class="bi bi-facebook"></i>
+              <i className="bi bi-facebook"></i>
             </div>
             <div className="conteudo">
               <h1>facebook</h1>
@@ -62,7 +62,7 @@ function DiritaC() {
         <li>
           <a href="mailto:gamesnack@gmail.com" target="_blank">
             <div className="icone">
-              <i class="bi bi-envelope-at-fill"></i>
+              <i className="bi bi-envelope-at-fill"></i>
             </div>
             <div className="conteudo">
               <h1>email</h1>

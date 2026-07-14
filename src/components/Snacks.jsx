@@ -289,17 +289,17 @@ function Snacks() {
                             className="removerEstrela"
                             onClick={() => RemoverEstrela(item._id)}
                           >
-                            <i class="bi bi-star-fill"></i>
+                            <i className="bi bi-star-fill"></i>
                             <h3>{item.estrelas}</h3>
                           </button>
                         ) : (
                           <button onClick={() => AdicionarEstrela(item._id)}>
-                            <i class="bi bi-star"></i>
+                            <i className="bi bi-star"></i>
                             <h3>{item.estrelas}</h3>
                           </button>
                         )}
                         <button>
-                          <i class="bi bi-chat-square"></i>
+                          <i className="bi bi-chat-square"></i>
                           <h3>{item.comentarios.length}</h3>
                         </button>
                       </div>
@@ -309,11 +309,11 @@ function Snacks() {
                             className="removerFavorito"
                             onClick={() => removerFav(item._id)}
                           >
-                            <i class="bi bi-bookmark-fill"></i>
+                            <i className="bi bi-bookmark-fill"></i>
                           </button>
                         ) : (
                           <button onClick={() => AdicionarFavorito(item._id)}>
-                            <i class="bi bi-bookmark"></i>
+                            <i className="bi bi-bookmark"></i>
                           </button>
                         )}
                       </div>
@@ -321,7 +321,7 @@ function Snacks() {
                   </div>
                   {carrinho.some((car) => car.id === item._id) ? (
                     <button className="Adicionado">
-                      <i class="bi bi-check2-circle"></i> adicionado ao carrinho
+                      <i className="bi bi-check2-circle"></i> adicionado ao carrinho
                     </button>
                   ) : (
                     <button
@@ -335,7 +335,7 @@ function Snacks() {
                         )
                       }
                     >
-                      <i class="bi bi-cart-plus-fill"></i> adicionar ao carrinho
+                      <i className="bi bi-cart-plus-fill"></i> adicionar ao carrinho
                     </button>
                   )}
                 </li>
@@ -392,17 +392,17 @@ function Snacks() {
                             className="removerEstrela"
                             onClick={() => RemoverEstrela(item._id)}
                           >
-                            <i class="bi bi-star-fill"></i>
+                            <i className="bi bi-star-fill"></i>
                             <h3>{item.estrelas}</h3>
                           </button>
                         ) : (
                           <button onClick={() => AdicionarEstrela(item._id)}>
-                            <i class="bi bi-star"></i>
+                            <i className="bi bi-star"></i>
                             <h3>{item.estrelas}</h3>
                           </button>
                         )}
                         <button>
-                          <i class="bi bi-chat-square"></i>
+                          <i className="bi bi-chat-square"></i>
                           <h3>{item.comentarios.length}</h3>
                         </button>
                       </div>
@@ -412,11 +412,11 @@ function Snacks() {
                             className="removerFavorito"
                             onClick={() => removerFav(item._id)}
                           >
-                            <i class="bi bi-bookmark-fill"></i>
+                            <i className="bi bi-bookmark-fill"></i>
                           </button>
                         ) : (
                           <button onClick={() => AdicionarFavorito(item._id)}>
-                            <i class="bi bi-bookmark"></i>
+                            <i className="bi bi-bookmark"></i>
                           </button>
                         )}
                       </div>
@@ -424,7 +424,7 @@ function Snacks() {
                   </div>
                   {carrinho.some((car) => car.id === item._id) ? (
                     <button className="Adicionado">
-                      <i class="bi bi-check2-circle"></i> adicionado ao carrinho
+                      <i className="bi bi-check2-circle"></i> adicionado ao carrinho
                     </button>
                   ) : (
                     <button
@@ -438,7 +438,7 @@ function Snacks() {
                         )
                       }
                     >
-                      <i class="bi bi-cart-plus-fill"></i> adicionar ao carrinho
+                      <i className="bi bi-cart-plus-fill"></i> adicionar ao carrinho
                     </button>
                   )}
                 </li>
@@ -495,17 +495,17 @@ function Snacks() {
                             className="removerEstrela"
                             onClick={() => RemoverEstrela(item._id)}
                           >
-                            <i class="bi bi-star-fill"></i>
+                            <i className="bi bi-star-fill"></i>
                             <h3>{item.estrelas}</h3>
                           </button>
                         ) : (
                           <button onClick={() => AdicionarEstrela(item._id)}>
-                            <i class="bi bi-star"></i>
+                            <i className="bi bi-star"></i>
                             <h3>{item.estrelas}</h3>
                           </button>
                         )}
                         <button>
-                          <i class="bi bi-chat-square"></i>
+                          <i className="bi bi-chat-square"></i>
                           <h3>{item.comentarios.length}</h3>
                         </button>
                       </div>
@@ -515,11 +515,11 @@ function Snacks() {
                             className="removerFavorito"
                             onClick={() => removerFav(item._id)}
                           >
-                            <i class="bi bi-bookmark-fill"></i>
+                            <i className="bi bi-bookmark-fill"></i>
                           </button>
                         ) : (
                           <button onClick={() => AdicionarFavorito(item._id)}>
-                            <i class="bi bi-bookmark"></i>
+                            <i className="bi bi-bookmark"></i>
                           </button>
                         )}
                       </div>
@@ -527,7 +527,7 @@ function Snacks() {
                   </div>
                   {carrinho.some((car) => car.id === item._id) ? (
                     <button className="Adicionado">
-                      <i class="bi bi-check2-circle"></i> adicionado ao carrinho
+                      <i className="bi bi-check2-circle"></i> adicionado ao carrinho
                     </button>
                   ) : (
                     <button
@@ -541,7 +541,7 @@ function Snacks() {
                         )
                       }
                     >
-                      <i class="bi bi-cart-plus-fill"></i> adicionar ao carrinho
+                      <i className="bi bi-cart-plus-fill"></i> adicionar ao carrinho
                     </button>
                   )}
                 </li>
@@ -598,17 +598,17 @@ function Snacks() {
                             className="removerEstrela"
                             onClick={() => RemoverEstrela(item._id)}
                           >
-                            <i class="bi bi-star-fill"></i>
+                            <i className="bi bi-star-fill"></i>
                             <h3>{item.estrelas}</h3>
                           </button>
                         ) : (
                           <button onClick={() => AdicionarEstrela(item._id)}>
-                            <i class="bi bi-star"></i>
+                            <i className="bi bi-star"></i>
                             <h3>{item.estrelas}</h3>
                           </button>
                         )}
                         <button>
-                          <i class="bi bi-chat-square"></i>
+                          <i className="bi bi-chat-square"></i>
                           <h3>{item.comentarios.length}</h3>
                         </button>
                       </div>
@@ -618,11 +618,11 @@ function Snacks() {
                             className="removerFavorito"
                             onClick={() => removerFav(item._id)}
                           >
-                            <i class="bi bi-bookmark-fill"></i>
+                            <i className="bi bi-bookmark-fill"></i>
                           </button>
                         ) : (
                           <button onClick={() => AdicionarFavorito(item._id)}>
-                            <i class="bi bi-bookmark"></i>
+                            <i className="bi bi-bookmark"></i>
                           </button>
                         )}
                       </div>
@@ -630,7 +630,7 @@ function Snacks() {
                   </div>
                   {carrinho.some((car) => car.id === item._id) ? (
                     <button className="Adicionado">
-                      <i class="bi bi-check2-circle"></i> adicionado ao carrinho
+                      <i className="bi bi-check2-circle"></i> adicionado ao carrinho
                     </button>
                   ) : (
                     <button
@@ -644,7 +644,7 @@ function Snacks() {
                         )
                       }
                     >
-                      <i class="bi bi-cart-plus-fill"></i> adicionar ao carrinho
+                      <i className="bi bi-cart-plus-fill"></i> adicionar ao carrinho
                     </button>
                   )}
                 </li>

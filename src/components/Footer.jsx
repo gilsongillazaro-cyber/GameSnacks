@@ -17,7 +17,7 @@ function Footer() {
             >
               <a href="mailto:gamesnack@gmail.com" target="_blank">
                 <span className="Icone">
-                  <i class="bi bi-envelope-at-fill"></i>
+                  <i className="bi bi-envelope-at-fill"></i>
                 </span>
                 <span className="Texto">email</span>
               </a>
@@ -32,7 +32,7 @@ function Footer() {
                 target="_blank"
               >
                 <span className="Icone">
-                  <i class="bi bi-facebook"></i>
+                  <i className="bi bi-facebook"></i>
                 </span>
                 <span className="Texto">facebook</span>
               </a>
@@ -46,7 +46,7 @@ function Footer() {
             >
               <a href="https://www.instagram.com/gilson_gil7/" target="_blank">
                 <span className="Icone">
-                  <i class="bi bi-instagram"></i>
+                  <i className="bi bi-instagram"></i>
                 </span>
                 <span className="Texto">instagram</span>
               </a>
@@ -59,7 +59,7 @@ function Footer() {
             >
               <a href="https://wa.me/244937490810" target="_blank">
                 <span className="Icone">
-                  <i class="bi bi-whatsapp"></i>
+                  <i className="bi bi-whatsapp"></i>
                 </span>
                 <span className="Texto">whatsapp</span>
               </a>
@@ -86,7 +86,7 @@ function Footer() {
             href="https://github.com/gilsongillazaro-cyber"
             target="_blank"
           >
-            <i class="bi bi-github"></i> gilson gil
+            <i className="bi bi-github"></i> gilson gil
           </a>{" "}
         </p>
       </div>

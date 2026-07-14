@@ -26,7 +26,7 @@ function Header() {
     const btn = e.currentTarget;
     setBotao(btn);
     if (!btn.classList.contains("aberto")) {
-      botao.classList.add("aberto");
+      btn.classList.add("aberto");
       nav.current.style.display = "block";
       setTimeout(() => {
         ul.current.style.width = "70%";
@@ -142,7 +142,7 @@ function Header() {
           }}
         >
           <p className="QuantiDate">{carrinho.length}</p>
-          <i class="bi bi-cart-fill"></i>
+          <i className="bi bi-cart-fill"></i>
         </button>
         <button
           ref={foo}
@@ -165,7 +165,7 @@ function Header() {
           }}
         >
           <p className="QuantiDate">{carrinho.length}</p>
-          <i class="bi bi-cart-fill"></i>
+          <i className="bi bi-cart-fill"></i>
         </button>
         <button
           ref={foo2}
@@ -184,22 +184,22 @@ function Header() {
           <ul ref={ul}>
             <li>
               <Link to={"/"}>
-                <i class="bi bi-house-fill"></i> inicio
+                <i className="bi bi-house-fill"></i> inicio
               </Link>
             </li>
             <li>
               <Link to={"/produtos"}>
-                <i class="bi bi-inboxes-fill"></i> produtos
+                <i className="bi bi-inboxes-fill"></i> produtos
               </Link>
             </li>
             <li>
               <Link to={"/contactos"}>
-                <i class="bi bi-person-rolodex"></i> contactos
+                <i className="bi bi-person-rolodex"></i> contactos
               </Link>
             </li>
             <li>
               <Link to={"/favoritos"}>
-                <i class="bi bi-bookmark-fill"></i> favoritos
+                <i className="bi bi-bookmark-fill"></i> favoritos
               </Link>
             </li>
             <button ref={bTer2}>

@@ -203,7 +203,7 @@ function AreaFeedbacks() {
       </p>
       <p>
         Ajude-nos a melhorar! Avalie sua experiência no site com uma nota de 1 a
-        5 estrelas. <i class="bi bi-star-fill"></i>
+        5 estrelas. <i className="bi bi-star-fill"></i>
       </p>
       <ul>
         {feedbacks.length > 0 ? (
@@ -222,7 +222,7 @@ function AreaFeedbacks() {
                     <p>{fee.feedback}</p>
                     <strong>
                       {Array.from({ length: fee.estrelas }, (index) => (
-                        <i key={index} class="bi bi-star-fill"></i>
+                        <i key={index} className="bi bi-star-fill"></i>
                       ))}
                     </strong>
                   </div>
@@ -231,14 +231,15 @@ function AreaFeedbacks() {
                     <button
                       onClick={() => RemoverFeedBack(fee._id, fee.usuarioId)}
                     >
-                      <i class="bi bi-trash2-fill"></i>
+                      <i className="bi bi-trash2-fill"></i>
                     </button>
                   )}
                 </div>
                 {User && User._id === fee.usuarioId && (
                   <div className="editar">
                     <p>
-                      <i class="bi bi-pen-fill"></i> atualize o seu feedback!
+                      <i className="bi bi-pen-fill"></i> atualize o seu
+                      feedback!
                     </p>
                     <form
                       onSubmit={(e) =>
@@ -259,10 +260,10 @@ function AreaFeedbacks() {
                         }}
                       >
                         <p ref={texto2}>
-                          <i class="bi bi-send-fill"></i>
+                          <i className="bi bi-send-fill"></i>
                         </p>
                         <h3 className="load" ref={load2}>
-                          <i class="bi bi-arrow-repeat"></i>
+                          <i className="bi bi-arrow-repeat"></i>
                         </h3>
                       </button>
                     </form>
@@ -290,10 +291,10 @@ function AreaFeedbacks() {
         </select>
         <button disabled={disabilitado}>
           <p ref={texto}>
-            <i class="bi bi-send-fill"></i>
+            <i className="bi bi-send-fill"></i>
           </p>
           <h3 className="load" ref={load}>
-            <i class="bi bi-arrow-repeat"></i>
+            <i className="bi bi-arrow-repeat"></i>
           </h3>
         </button>
       </form>

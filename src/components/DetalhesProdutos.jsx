@@ -253,14 +253,14 @@ function DetalhesProdutos({ estado, Item, Id, favoritos, Eu, PegarTodos, YH }) {
               {Item.quemEstrelou.some((user) => user.id === Id) ? (
                 <>
                   <button onClick={() => RemoverEstrela(Item._id)}>
-                    <i class="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
                   </button>
                   <span>{Item.estrelas}</span>
                 </>
               ) : (
                 <>
                   <button onClick={() => AdicionarEstrela(Item._id)}>
-                    <i class="bi bi-star"></i>
+                    <i className="bi bi-star"></i>
                   </button>
                   <span>{Item.estrelas}</span>
                 </>
@@ -268,18 +268,18 @@ function DetalhesProdutos({ estado, Item, Id, favoritos, Eu, PegarTodos, YH }) {
             </div>
             <div className="comentarios">
               <button>
-                <i class="bi bi-chat-square"></i>{" "}
+                <i className="bi bi-chat-square"></i>{" "}
                 <span>{Item.comentarios.length}</span>
               </button>
             </div>
             <div className="favoritos">
               {favoritos.some((user) => user.id === Item._id) ? (
                 <button onClick={() => removerFav(Item._id)}>
-                  <i class="bi bi-bookmark-fill"></i>
+                  <i className="bi bi-bookmark-fill"></i>
                 </button>
               ) : (
                 <button onClick={() => AdicionarFavorito(Item._id)}>
-                  <i class="bi bi-bookmark"></i>
+                  <i className="bi bi-bookmark"></i>
                 </button>
               )}
             </div>
@@ -296,7 +296,7 @@ function DetalhesProdutos({ estado, Item, Id, favoritos, Eu, PegarTodos, YH }) {
           <div className="encoo">
             {carrinho.some((car) => car.id === Item._id) ? (
               <button className="Adicionado">
-                <i class="bi bi-check2-circle"></i> adicionado ao carrinho
+                <i className="bi bi-check2-circle"></i> adicionado ao carrinho
               </button>
             ) : (
               <button
@@ -306,14 +306,14 @@ function DetalhesProdutos({ estado, Item, Id, favoritos, Eu, PegarTodos, YH }) {
                   AdiconarCarrinho(Item.foto, Item.nome, Item.preco, Item._id)
                 }
               >
-                <i class="bi bi-cart-plus-fill"></i> adicionar ao carrinho
+                <i className="bi bi-cart-plus-fill"></i> adicionar ao carrinho
               </button>
             )}
             <button
               className="whh"
               onClick={() => PedirWht(Item.nome, Item.preco)}
             >
-              <i class="bi bi-whatsapp"></i> pedir no whatsapp
+              <i className="bi bi-whatsapp"></i> pedir no whatsapp
             </button>
           </div>
           <h3>comentarios dos nossos clientes</h3>
@@ -342,7 +342,7 @@ function DetalhesProdutos({ estado, Item, Id, favoritos, Eu, PegarTodos, YH }) {
                             RemoverComenmtario(Item._id, comen.id, comen._id)
                           }
                         >
-                          <i class="bi bi-trash-fill"></i>
+                          <i className="bi bi-trash-fill"></i>
                         </button>
                       )}
                     </li>
@@ -363,7 +363,7 @@ function DetalhesProdutos({ estado, Item, Id, favoritos, Eu, PegarTodos, YH }) {
                 }}
               ></textarea>
               <button onClick={() => AdicionarComentario(Item._id)}>
-                <i class="bi bi-send-fill"></i>
+                <i className="bi bi-send-fill"></i>
               </button>
             </div>
           </ul>

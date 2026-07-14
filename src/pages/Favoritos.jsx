@@ -167,18 +167,18 @@ function Favoritos() {
       <Header />
       <div className="topoo">
         <h1>
-          <i class="bi bi-bookmark-check-fill"></i> meus favoritos
+          <i className="bi bi-bookmark-check-fill"></i> meus favoritos
         </h1>
         <div className="quantidade">
           <div>
             <h3>
-              <i class="bi bi-grid"></i> todos:{" "}
+              <i className="bi bi-grid"></i> todos:{" "}
               <span>{Meusfav?.length || 0}</span>
             </h3>
           </div>
           <div>
             <h3>
-              <i class="bi bi-controller"></i> jogos:{" "}
+              <i className="bi bi-controller"></i> jogos:{" "}
               <span>
                 {Meusfav?.filter((f) => f.categoriaGeral === "jogos")?.length ||
                   0}
@@ -187,7 +187,7 @@ function Favoritos() {
           </div>
           <div>
             <h3>
-              <i class="bi bi-egg-fried"></i> snacks:{" "}
+              <i className="bi bi-egg-fried"></i> snacks:{" "}
               <span>
                 {Meusfav?.filter((f) => f.categoriaGeral === "snacks")
                   ?.length || 0}
@@ -228,13 +228,14 @@ function Favoritos() {
                 </h1>
                 <button onClick={() => removerFav(fav.id)}>
                   {" "}
-                  <i class="bi bi-bookmark-dash-fill"></i> remover dos favoritos
+                  <i className="bi bi-bookmark-dash-fill"></i> remover dos
+                  favoritos
                 </button>
                 <button
                   className="what"
                   onClick={() => pedirWhatsapp(fav.nome, fav.preco)}
                 >
-                  <i class="bi bi-whatsapp"></i> reservar no whatsapp
+                  <i className="bi bi-whatsapp"></i> reservar no whatsapp
                 </button>
               </li>
             ))
@@ -275,11 +276,13 @@ function Favoritos() {
                 </h1>
                 <button onClick={() => removerFav(fav.id)}>
                   {" "}
-                  <i class="bi bi-bookmark-dash-fill"></i> remover dos favoritos
+                  <i className="bi bi-bookmark-dash-fill"></i> remover dos
+                  favoritos
                 </button>
                 {carrinho.some((car) => car.id === fav._id) ? (
                   <button className="Adicionado">
-                    <i class="bi bi-check2-circle"></i> adicionado ao carrinho
+                    <i className="bi bi-check2-circle"></i> adicionado ao
+                    carrinho
                   </button>
                 ) : (
                   <button
@@ -288,7 +291,8 @@ function Favoritos() {
                       AdiconarCarrinho(fav.foto, fav.nome, fav.preco, fav._id)
                     }
                   >
-                    <i class="bi bi-cart-plus-fill"></i> adicionar ao carrinho
+                    <i className="bi bi-cart-plus-fill"></i> adicionar ao
+                    carrinho
                   </button>
                 )}
               </li>
@@ -317,12 +321,14 @@ function Favoritos() {
                 </h1>
                 <button onClick={() => removerFav(fav.id)}>
                   {" "}
-                  <i class="bi bi-bookmark-dash-fill"></i> remover dos favoritos
+                  <i className="bi bi-bookmark-dash-fill"></i> remover dos
+                  favoritos
                 </button>
                 {fav.categoriaGeral === "snacks" ? (
                   carrinho.some((car) => car.id === fav._id) ? (
                     <button className="Adicionado">
-                      <i class="bi bi-check2-circle"></i> adicionado ao carrinho
+                      <i className="bi bi-check2-circle"></i> adicionado ao
+                      carrinho
                     </button>
                   ) : (
                     <button
@@ -331,7 +337,8 @@ function Favoritos() {
                         AdiconarCarrinho(fav.foto, fav.nome, fav.preco, fav._id)
                       }
                     >
-                      <i class="bi bi-cart-plus-fill"></i> adicionar ao carrinho
+                      <i className="bi bi-cart-plus-fill"></i> adicionar ao
+                      carrinho
                     </button>
                   )
                 ) : (
@@ -339,7 +346,7 @@ function Favoritos() {
                     className="what"
                     onClick={() => pedirWhatsapp(fav.nome, fav.preco)}
                   >
-                    <i class="bi bi-whatsapp"></i> reservar no whatsapp
+                    <i className="bi bi-whatsapp"></i> reservar no whatsapp
                   </button>
                 )}
               </li>

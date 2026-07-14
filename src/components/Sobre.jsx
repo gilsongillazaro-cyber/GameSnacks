@@ -162,7 +162,7 @@ function Sobre() {
               );
             }}
           >
-            <i class="bi bi-patch-check-fill"></i> <p>Qualidade</p>
+            <i className="bi bi-patch-check-fill"></i> <p>Qualidade</p>
           </li>
           <li
             className="honestidade"
@@ -175,7 +175,7 @@ function Sobre() {
               );
             }}
           >
-            <i class="bi bi-shield-fill-check"></i> <p>Honestidade</p>
+            <i className="bi bi-shield-fill-check"></i> <p>Honestidade</p>
           </li>
           <li
             className="respeito"
@@ -188,7 +188,7 @@ function Sobre() {
               );
             }}
           >
-            <i class="bi bi-person-hearts"></i> <p>Respeito ao cliente</p>
+            <i className="bi bi-person-hearts"></i> <p>Respeito ao cliente</p>
           </li>
           <li
             className="compromisso"
@@ -201,7 +201,7 @@ function Sobre() {
               );
             }}
           >
-            <i class="bi bi-calendar2-event-fill"></i> <p>Compromisso</p>
+            <i className="bi bi-calendar2-event-fill"></i> <p>Compromisso</p>
           </li>
           <li
             className="inovacao"
@@ -214,7 +214,7 @@ function Sobre() {
               );
             }}
           >
-            <i class="bi bi-lightbulb-fill"></i> <p>Inovação</p>
+            <i className="bi bi-lightbulb-fill"></i> <p>Inovação</p>
           </li>
           <li
             className="excelencia"
@@ -227,7 +227,8 @@ function Sobre() {
               );
             }}
           >
-            <i class="bi bi-trophy-fill"></i> <p>Excelência no atendimento</p>
+            <i className="bi bi-trophy-fill"></i>{" "}
+            <p>Excelência no atendimento</p>
           </li>
         </ul>
       </div>

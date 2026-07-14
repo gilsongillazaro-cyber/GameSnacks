@@ -15,21 +15,21 @@ function MeusDados({ monstrar, eu }) {
   return (
     <div className="MeusDados" onClick={fechar2}>
       <button id="fechar" onClick={fechar}>
-        <i class="bi bi-x"></i>
+        <i className="bi bi-x"></i>
       </button>
       <div className="container">
         <div className="topo">
           <img src={eu?.foto} alt="" />
           <div>
             <h1 id="eu">
-              <i class="bi bi-person-fill"></i> {eu?.nomeUsuario}
+              <i className="bi bi-person-fill"></i> {eu?.nomeUsuario}
             </h1>
             <h2>
-              <i class="bi bi-person-arms-up"></i>
+              <i className="bi bi-person-arms-up"></i>
               {eu?.nome}
             </h2>
             <p>
-              <i class="bi bi-envelope-at-fill"></i> {eu?.email}
+              <i className="bi bi-envelope-at-fill"></i> {eu?.email}
             </p>
           </div>
         </div>
@@ -38,7 +38,7 @@ function MeusDados({ monstrar, eu }) {
             total dos seus itens favoritos{" "}
             <Link to={"/favoritos"}>
               {" "}
-              <i class="bi bi-bookmark-check-fill"></i> {eu?.favoritos?.length}
+              <i className="bi bi-bookmark-check-fill"></i> {eu?.favoritos?.length}
             </Link>
           </h3>
           <button
@@ -53,7 +53,7 @@ function MeusDados({ monstrar, eu }) {
               }, 3000);
             }}
           >
-            <i class="bi bi-person-walking"></i> terminar sessão
+            <i className="bi bi-person-walking"></i> terminar sessão
           </button>
         </div>
       </div>

@@ -89,10 +89,10 @@ function Topo() {
         </div>
         <div className="botoes">
           <button id="recuar" onClick={recuar}>
-            <i class="bi bi-arrow-left-circle-fill"></i>
+            <i className="bi bi-arrow-left-circle-fill"></i>
           </button>
           <button id="avancar" onClick={avancar}>
-            <i class="bi bi-arrow-right-circle-fill"></i>
+            <i className="bi bi-arrow-right-circle-fill"></i>
           </button>
         </div>
       </main>

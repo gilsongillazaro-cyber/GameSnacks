@@ -321,7 +321,7 @@ Localização de entrega:
   return (
     <div className="DetalhesSnacksFavoritos" onClick={del}>
       <button id="fechar5" onClick={fecharD}>
-        <i class="bi bi-x"></i>
+        <i className="bi bi-x"></i>
       </button>
       <div id="container">
         <div className="LateralEsquerda">
@@ -362,7 +362,7 @@ Localização de entrega:
                     className="removerFavorito"
                     onClick={() => removerFav(item?._id)}
                   >
-                    <i class="bi bi-bookmark-fill"></i>
+                    <i className="bi bi-bookmark-fill"></i>
                   </button>
                 ) : (
                   <button onClick={() => AdicionarFavorito(item?._id)}>
@@ -377,13 +377,13 @@ Localização de entrega:
 
             <div className="Enco">
               <button id="wh" onClick={() => PedirWht(item?.nome, item?.preco)}>
-                <i class="bi bi-whatsapp"></i> pedir no whatsapp
+                <i className="bi bi-whatsapp"></i> pedir no whatsapp
               </button>
             </div>
           </div>
           <div className="Comentarios">
             <h1>
-              <i class="bi bi-chat-square"></i> Opiniões dos clientes
+              <i className="bi bi-chat-square"></i> Opiniões dos clientes
             </h1>
             <ul id="Conjunto">
               {item?.comentarios?.length > 0 ? (
@@ -416,7 +416,7 @@ Localização de entrega:
                             )
                           }
                         >
-                          <i class="bi bi-trash-fill"></i>
+                          <i className="bi bi-trash-fill"></i>
                         </button>
                       )}
                     </li>
@@ -436,7 +436,7 @@ Localização de entrega:
                   }}
                 ></textarea>
                 <button onClick={() => AdicionarComentario(item?._id)}>
-                  <i class="bi bi-send-fill"></i>
+                  <i className="bi bi-send-fill"></i>
                 </button>
               </div>
             </ul>

@@ -220,22 +220,22 @@ function DetalhesJogosFavoritos({ jogo, estado, Id, Eu }) {
               {JOGO?.quemEstrelou?.some((user) => user.id === Id) ? (
                 <>
                   <button onClick={() => RemoverEstrela(JOGO._id)}>
-                    <i class="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
                   </button>
                   <p>{JOGO?.estrelas}</p>
                   <p>
-                    <i class="bi bi-chat-square-fill"></i>{" "}
+                    <i className="bi bi-chat-square-fill"></i>{" "}
                     {JOGO?.comentarios?.length}
                   </p>
                 </>
               ) : (
                 <>
                   <button onClick={() => AdicionarEstrela(JOGO._id)}>
-                    <i class="bi bi-star"></i>
+                    <i className="bi bi-star"></i>
                   </button>
                   <p>{JOGO?.estrelas}</p>
                   <p>
-                    <i class="bi bi-chat-square-fill"></i>{" "}
+                    <i className="bi bi-chat-square-fill"></i>{" "}
                     {JOGO?.comentarios?.length}
                   </p>
                 </>
@@ -243,7 +243,7 @@ function DetalhesJogosFavoritos({ jogo, estado, Id, Eu }) {
             </div>
             <div className="fv">
               <button>
-                <i class="bi bi-bookmark-star-fill"></i>
+                <i className="bi bi-bookmark-star-fill"></i>
               </button>
             </div>
           </div>
@@ -283,7 +283,7 @@ function DetalhesJogosFavoritos({ jogo, estado, Id, Eu }) {
                           )
                         }
                       >
-                        <i class="bi bi-trash-fill"></i>
+                        <i className="bi bi-trash-fill"></i>
                       </button>
                     )}
                   </div>
@@ -291,7 +291,7 @@ function DetalhesJogosFavoritos({ jogo, estado, Id, Eu }) {
             ) : (
               <h3 className="sem">
                 ainda não há comentarios
-                <i class="bi bi-chat-square"></i>
+                <i className="bi bi-chat-square"></i>
               </h3>
             )}
             <div className="envio">
@@ -305,7 +305,7 @@ function DetalhesJogosFavoritos({ jogo, estado, Id, Eu }) {
                 }}
               ></textarea>
               <button onClick={() => AdicionarComentario(JOGO._id)}>
-                <i class="bi bi-send-fill"></i>
+                <i className="bi bi-send-fill"></i>
               </button>
             </div>
           </div>
