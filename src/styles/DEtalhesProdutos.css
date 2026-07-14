@@ -82,6 +82,8 @@
   font-size: 23px;
   border-radius: 5pt;
   height: 40px;
+  color: black;
+  outline: none;
   font-weight: bold;
   border: none;
   cursor: pointer;

@@ -116,6 +116,8 @@
   border-radius: 5pt;
   border: none;
   height: 40px;
+  color: black;
+  outline: none;
   transition: 0.5s;
 }
 #UL li #adiconarCarrinho {

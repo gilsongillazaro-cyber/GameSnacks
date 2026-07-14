@@ -109,6 +109,8 @@
   font-size: 2rem;
   background: none;
   border: none;
+  outline: none;
+  color: black;
   cursor: pointer;
 }
 .removerEstrela i {
@@ -117,7 +119,7 @@
   -webkit-background-clip: text;
   text-transform: capitalize;
   -webkit-text-fill-color: transparent;
-  animation: ci 1s linear;
+  animation: ci 0.3s linear;
 }
 @keyframes ci {
   0% {
@@ -136,7 +138,7 @@
   -webkit-background-clip: text;
   text-transform: capitalize;
   -webkit-text-fill-color: transparent;
-  animation: ci 1s linear;
+  animation: ci 0.3s linear;
 }
 
 .dirr button h3 {
@@ -156,6 +158,8 @@
   font-size: 2rem;
   background: none;
   border: none;
+  color: black;
+  outline: none;
   cursor: pointer;
 }
 .AlgunsItens .ull .lii #adiconarCarrinho {

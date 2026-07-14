@@ -59,6 +59,8 @@
   font-size: 23px;
   height: 100%;
   border: none;
+  color: black;
+  outline: none;
   cursor: pointer;
 }
 .int button i {
@@ -239,8 +241,8 @@ p {
 
   .ConT {
     width: 100%;
-    height: 100%;
-    max-height: 95vh;
+    height: 90%;
+    max-height: 90vh;
     padding: 10px;
     flex-direction: column;
     gap: 20px;

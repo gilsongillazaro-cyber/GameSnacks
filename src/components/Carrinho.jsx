@@ -86,8 +86,8 @@ Obrigado!
       load.current.style.display = "none";
       texto.current.style.display = "block";
       setCarrinho([]);
-      const url = `https://wa.me/${numero}/?text=${encodeURIComponent(mensagem)}`;
-      window.open(url, "_blanck");
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+      window.location.href = url;
     } catch (erro) {
       load.current.style.display = "none";
       texto.current.style.display = "block";

@@ -145,6 +145,8 @@
   justify-content: space-around;
 }
 .dirr button {
+  color: black;
+  outline: none;
   height: 90%;
   width: 35%;
   display: flex;
@@ -157,7 +159,7 @@
   cursor: pointer;
 }
 
-#removerEstrela i {
+.removerEstrela i {
   /*background: linear-gradient(to right, #ffd400 0%, #fff192 100%);
 
   -webkit-background-clip: text;
@@ -167,7 +169,7 @@
   -webkit-background-clip: text;
   text-transform: capitalize;
   -webkit-text-fill-color: transparent;
-  animation: ci 1s linear;
+  animation: ci 0.3s linear;
 }
 @keyframes ci {
   0% {
@@ -177,15 +179,15 @@
     transform: scale(1);
   }
 }
-#removerEstrela h3 {
+.removerEstrela h3 {
   color: black;
 }
-#removerFavorito {
+.removerFavorito {
   background: linear-gradient(45deg, red, orange);
   -webkit-background-clip: text;
   text-transform: capitalize;
   -webkit-text-fill-color: transparent;
-  animation: ci 1s linear;
+  animation: ci 0.3s linear;
 }
 
 .dirr button h3 {
@@ -201,6 +203,8 @@
 
 .ess button {
   height: 90%;
+  color: black;
+  outline: none;
   width: 45%;
   font-size: 2rem;
   background: none;
@@ -228,12 +232,6 @@
   background-color: rgba(245, 222, 179, 0.295);
   border: none;
   box-shadow: none;
-}
-#removerEstrela {
-  display: none;
-}
-#removerFavorito {
-  display: none;
 }
 
 @media (max-width: 1200px) {

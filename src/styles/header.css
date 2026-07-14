@@ -109,6 +109,7 @@ header .btns button {
   background: none;
   cursor: pointer;
   font-weight: bold;
+  color: black;
   text-transform: capitalize;
 }
 #car {
@@ -117,6 +118,7 @@ header .btns button {
   height: 50%;
   transition: 0.4s;
   position: relative;
+  color: black;
 }
 #lo {
   height: 50%;
